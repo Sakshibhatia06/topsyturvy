@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 9f21443b89c9d841b69b1a9a912f6ef589e1ded7
 (function() {
     "use strict";
 
@@ -32,20 +28,6 @@
         toggleNavbarMethod();
         window.addEventListener('resize', toggleNavbarMethod);
     });
-<<<<<<< HEAD
-    // Back to top button
-    window.addEventListener('scroll', function() {
-        const backToTop = document.querySelector('.back-to-top');
-        if (window.scrollY > 100) {
-            backToTop.style.display = 'block';
-            backToTop.style.opacity = 1;
-        } else {
-            backToTop.style.display = 'none';
-            backToTop.style.opacity = 0;
-        }
-    });
-
-=======
 
     // Back to top button
     window.addEventListener('scroll', function() {
@@ -59,7 +41,6 @@
         }
     });
 
->>>>>>> 9f21443b89c9d841b69b1a9a912f6ef589e1ded7
     document.querySelector('.back-to-top').addEventListener('click', function (e) {
         e.preventDefault();
         window.scrollTo({
@@ -75,8 +56,6 @@
             const inputField = button.parentElement.parentElement.querySelector('input');
             let oldValue = parseFloat(inputField.value);
             let newValue;
-<<<<<<< HEAD
-=======
 
             if (button.classList.contains('btn-plus')) {
                 newValue = oldValue + 1;
@@ -131,40 +110,7 @@ $(document).ready(function(){
       }
     });
   });
->>>>>>> 9f21443b89c9d841b69b1a9a912f6ef589e1ded7
 
-            if (button.classList.contains('btn-plus')) {
-                newValue = oldValue + 1;
-            } else {
-                newValue = oldValue > 0 ? oldValue - 1 : 0;
-            }
-
-            inputField.value = newValue;
-        });
-    });
-})();
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      autoplay: true,
-      autoplayTimeout: 2000,
-      autoplayHoverPause: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 1
-        }
-      }
-    });
-  });
-  //faqs
 window.addEventListener('scroll', function() {
     var content = document.getElementById('content');
     if (window.scrollY > 50) { // When scrolling starts
@@ -173,8 +119,4 @@ window.addEventListener('scroll', function() {
         content.classList.remove('active');
     }
 });
-<<<<<<< HEAD
 ScrollReveal().reveal('.container-fluid', { delay: 400 },{origin:"left"});
-=======
-ScrollReveal().reveal('.container-fluid', { delay: 400 },{origin:"left"});
->>>>>>> 9f21443b89c9d841b69b1a9a912f6ef589e1ded7
