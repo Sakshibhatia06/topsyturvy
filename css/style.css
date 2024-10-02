@@ -9658,8 +9658,8 @@ a.text-dark:hover, a.text-dark:focus {
     object-fit: cover;
   }
   .width img{
-    width: 24vw;
-    height: 9vh;
+    width: 27vw;
+    height: 8vh;
   }
   .position{
     display: flex;
