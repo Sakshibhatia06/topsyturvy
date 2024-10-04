@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>TOPSYTURVY</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- Favicon -->
+  <link href="./Images/Screenshot_2024-09-04_173647-removebg-preview.png" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    .main-product-image {
+      margin-left: 40px;
+      display: flex;
+      gap: 20px;
+      justify-content: space-around;
+      margin-bottom: 70px;
+    }
+
+    .main-image {
+      width: 600px;
+      height: 600px;
+      object-fit: cover;
+    }
+
+    .product-thumbnails {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .thumbnail {
+      border: 1px solid gray;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      cursor:pointer;
+    }
+    .btn2{
+      border: 2px solid black;
+      padding: 8px;
+      background-color: #EDF1FF;
+    }
+    #productPrice{
+      color: black;
+      font-weight: 600;
+    }
+    @media (max-width: 576px) {
+      .main-product-image {
+        flex-direction: column;
+        margin-left: 0px;
+      }
+      .main-image {
+        width: 275px;
+        height: 275px;
+      }
+      .product-thumbnails {
+        gap: 10px;
+        flex-direction: row;
+      }
+      .thumbnail {
+        width: 70px;
+        height: 70px;
+      }
+      .main23{
+        display: flex;
+        justify-content: center;
+      }
+      .main32{
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row bg-secondary px-xl-5">
+      <div class="col-lg-6 d-lg-block">
+        <div class="d-inline-flex margin">
+          <p><strong style="color:#d31919;"> TOPSY TURVY </strong>, The latest brand innovation by Allure
+            Houseware</p>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center text-lg-right">
+        <div class="d-inline-flex align-items-center">
+          <a class="text-dark px-2" target="_blank" href="https://www.facebook.com/profile.php?id=61565379063062">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a class="text-dark px-2" target="_blank" href="https://www.instagram.com/topsyturvy.allure/">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a class="text-dark px-2" target="_blank" href="https://www.youtube.com/@TopsyTurvy1">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-center py-3 px-xl-5">
+      <div class="col-lg-3 d-none d-lg-block">
+        <a href="index.html" class="text-decoration-none">
+          <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary px-3 mr-1"><img height="100px"
+                src="./Images/Screenshot_2024-09-04_173647-removebg-preview.png"></h1>
+        </a>
+      </div>
+      <div class="col-lg-6 col-6 text-left">
+        <form action="">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for products">
+            <div class="input-group-append">
+              <span class="input-group-text bg-transparent text-primary">
+                <i class="fa fa-search"></i>
+              </span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-3 col-6 text-right">
+        <a href="" class="btn border">
+          <i class="fas fa-heart text-primary"></i>
+          <span class="badge">0</span>
+        </a>
+        <a href="" class="btn border">
+          <i class="fas fa-shopping-cart text-primary"></i>
+          <span class="badge">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid mb-5">
+    <div class="row border-top px-xl-5">
+      <div class="col-lg-9">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+          <div class="text-decoration-none d-lg-none width position">
+            <img src="./Images/Screenshot_2024-09-04_173647-removebg-preview.png">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav mr-auto py-0">
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="about.html" class="nav-item nav-link">About Us</a>
+              <a href="gifting.html" class="nav-item nav-link">Corporate Gifting</a>
+              <a href="index.html#bestseller" class="nav-item nav-link">Best Sellers</a>
+              <a href="index.html#deal" class="nav-item nav-link">Deal Of The Day</a>
+              <a href="blog.html" class="nav-item nav-link">Blog</a>
+              <a href="faq.html" class="nav-item nav-link">FAQs</a>
+              <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-secondary mb-5">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 150px">
+      <h1 class="font-weight-semi-bold text-uppercase mb-3">Products</h1>
+      <div class="d-inline-flex">
+        <p class="m-0"><a href="">Home</a></p>
+        <p class="m-0 px-2">-</p>
+        <p class="m-0">Product Details</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-product-image">
+    <div class="product-thumbnails">
+      <img id="thumb1" class="thumbnail" src="" alt="Thumbnail 1">
+      <img id="thumb2" class="thumbnail" src="" alt="Thumbnail 2">
+      <img id="thumb3" class="thumbnail" src="" alt="Thumbnail 3">
+      <img id="thumb4" class="thumbnail" src="" alt="Thumbnail 4">
+    </div>
+    <div class="main23">
+      <img id="mainImage" class="main-image" src="" alt="Main Product">
+    </div>
+    <div class="main32">
+      <h1 id="productName"></h1>
+      <p id="productPrice"></p>
+      <p id="productDescription"></p>
+      <a href="addcart.html#cart" class="btn btn2 btn-sm text-dark"><i
+        class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+    </div>
+  </div>
+
+  <div class="container-fluid bg-secondary text-dark mt-1" id="contact">
+    <div class="row px-xl-5 pt-5">
+      <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
+        <a href="" class="text-decoration-none">
+          <img style="margin-bottom: 10px;" height="80vh"
+            src="./Images/Screenshot_2024-09-04_173647-removebg-preview.png">
+        </a>
+        <p>TOPSY TURVY, the latest brand innovation by Allure Houseware. Designed with a commitment to premium
+          quality and exceptional value, TOPSY TURVY stands out by offering houseware products that are
+          anything but ordinary. With a keen eye for uniqueness and a dedication to craftsmanship, TOPSY TURVY
+          transforms everyday essentials into extraordinary experiences, ensuring you get both style and
+          functionality without compromise.</p>
+        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Allure Houseware, I.P.
+          extension, Delhi - 110092 INDIA</p>
+        <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>Monday to Saturday 9A.M to
+          5:30P.M</p>
+        <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>topsyturvyallure@gmail.com</p>
+        <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+91 11 47021375</p>
+      </div>
+      <div class="col-lg-8 col-md-12">
+        <div class="row">
+          <div class="col-md-4 mb-5">
+            <h5 class="font-weight-bold text-dark mb-4">Quick Links</h5>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-dark mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+              <a class="text-dark mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+              <a class="text-dark mb-2" href="gifting.html"><i class="fa fa-angle-right mr-2"></i>Corporate
+                Gifting</a>
+              <a class="text-dark mb-2" href="index.html#bestseller"><i class="fa fa-angle-right mr-2"></i>Best
+                Sellers</a>
+              <a class="text-dark mb-2" href="index.html#deal"><i class="fa fa-angle-right mr-2"></i>Deal Of The Day</a>
+              <a class="text-dark mb-2" href="blog.html"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+              <a class="text-dark mb-2" href="faq.html"><i class="fa fa-angle-right mr-2"></i>FAQs</a>
+              <a class="text-dark" href="#contact"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <a href="policy.html">
+              <h5 class="font-weight-bold text-dark mb-4">Policies</h5>
+            </a>
+            <p></p>
+            <a href="policy.html#policy1">Shipping Policy</a>
+            <br>
+            <a href="policy.html#policy2">Return Policy</a>
+            <br>
+            <a href="policy.html#policy3">Term of Services</a>
+            <br>
+            <a href="policy.html#policy4">Privacy Policies</a>
+          </div>
+          <div class="col-md-4 mb-5">
+            <h5 class="font-weight-bold text-dark mb-4">Follow Us</h5>
+            <a class="text-dark px-2" target="_blank" href="https://www.facebook.com/profile.php?id=61565379063062">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a class="text-dark px-2" target="_blank" href="https://www.instagram.com/topsyturvy.allure/">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="text-dark px-2" target="_blank" href="https://www.youtube.com/@TopsyTurvy1">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row border-top border-light mx-xl-5 py-4">
+      <div class="col-md-6 px-xl-0">
+        <p class="mb-md-0 text-center text-md-left text-dark">
+          &copy; <a class="text-dark font-weight-semi-bold" href="#"> 2024 TOPSYTURVY</a>. All Rights
+          Reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+  <script src="js/main.js"></script>
+  <script>
+    // Product data stored in a JavaScript object (could also be loaded from a JSON file)
+    const products = {
+      1: {
+        name: 'Stainless Steel Black PVD Kadhai',
+        price: 'Price - ₹2790',
+        description: "Versatile Cooking: Suitable for a variety of cooking techniques, including frying, sautéing and simmering.",
+        image: './Images/60.jpg',
+        thumbnails: [
+          './Images/26.jpg',
+          './Images/27.jpg',
+          './Images/28.jpg',
+          './Images/29.jpg',
+          './Images/30.jpg'
+        ]
+      },
+      2: {
+        name: 'SAUCE PAN 16 CM WITH LID',
+        price: 'Price - ₹1890',
+        description: 'Sauce pan with a glass lid for versatile cooking.',
+        image: './Images/Bestseller 2.png',
+        thumbnails: [
+          './Images/67.jpg',
+          './Images/66.jpg',
+          './Images/70.jpg',
+          './Images/68.jpg'
+        ]
+      },
+      3: {
+        name: 'FRY PAN 20 CM WITHOUT LID',
+        price: 'Price - ₹1890',
+        description: `<strong>Non-Reactive Surface:</strong> Suitable for a wide range of ingredients without
+affecting flavor.<br>
+<strong>Easy to Clean:</strong> Smooth surface simplifies cleanup. Comfortable Handle: Heat-resistant and ergonomically designed for ease of
+use.<br> <strong>Modern Appearance:</strong> Sleek design adds sophistication to any kitchen`,
+        image: './Images/Bestseller 3.png',
+        thumbnails: [
+          './Images/71.jpg',
+          './Images/72.jpg',
+          './Images/73.jpg',
+          './Images/74.jpg',
+        ]
+      },
+      4: {
+        name: 'Stainless Steel Black PVD Sauce Pan',
+        price: 'Price - ₹1890',
+        description: `<strong>Even Heat Distribution:</strong> Thick encapsulated sandwich (SAS) bottom ensures
+consistent cooking without hotspots.<br> <strong>Lid Included:</strong> Retains heat and moisture for improved flavor and cooking
+efficiency`,
+        image: './Images/66.jpg',
+        thumbnails: [
+          './Images/67.jpg',
+          './Images/68.jpg',
+          './Images/69.jpg',
+          './Images/70.jpg',
+        ]
+      },
+      5: {
+        name: 'Stainless Steel Black PVD Fry Pan',
+        price: 'Price - ₹1890',
+        description: `<strong>Non-Reactive Surface:</strong> Suitable for a wide range of ingredients without
+affecting flavor.<br>
+<strong>Easy to Clean:</strong> Smooth surface simplifies cleanup. Comfortable Handle: Heat-resistant and ergonomically designed for ease of
+use.<br> <strong>Modern Appearance:</strong> Sleek design adds sophistication to any kitchen.
+`,
+        image: './Images/71.jpg',
+        thumbnails: [
+          './Images/71.jpg',
+          './Images/72.jpg',
+          './Images/73.jpg',
+          './Images/74.jpg',
+        ]
+      },
+      6: {
+        name: 'Stainless Steel Black PVD Sauce Pot',
+        price: 'Price - ₹2590',
+        description: `<strong>Compact Size:</strong> Ideal for preparing smaller batches of soups, stews, sauces
+and vegetables.<br>
+<strong>Durable Construction:</strong> Made from high-quality stainless steel for long-lasting
+use and resistance to rust.<br>
+<strong>Tight-Fitting Lid:</strong> Locks in moisture and flavors for better cooking results.
+`,
+        image: './Images/53.jpg',
+        thumbnails: [
+          './Images/54.jpg',
+          './Images/55.jpg',
+          './Images/56.jpg',
+          './Images/57.jpg',
+        ]
+      },
+      7: {
+        name: 'Stainless Steel Black PVD Spoon and Turner',
+        price: 'Price - ₹590',
+        description: `<strong>Heat Resistant:</strong> Can withstand high temperatures without damage, ideal for
+hot dishes.<br>
+<strong>Sturdy Construction:</strong> Reinforced for strength, ensuring it can handle heavy or
+bulky items without bending or breaking.<br>
+<strong>Elegant Finish:</strong> The sleek, polished appearance complements a wide range of
+tableware and kitchen decor.
+`,
+        image: './Images/75.jpg',
+        thumbnails: [
+          './Images/76.jpg',
+          './Images/77.jpg',
+          './Images/78.jpg',
+          './Images/79.jpg',
+        ]
+      },
+      8: {
+        name: '9 Piece Cookware Set Stainless Steel Black PVD',
+        price: "Price - ₹9450",
+        description:   `<ul>
+          <strong>
+          <li>20 CM FRY PAN without lid,</li>
+          <li>24 CM KADHAI with LID,</li>
+          <li>16 CM SAUCE PAN with LID,</li>
+          <li>20 CM SAUCE POT with LID,</li>
+          <li>S. SPOON, S. TURNER</li></strong>
+        </ul> White gift pack boxes for all our range of cookware offers a sleek and elegant
+presentation, making them perfect for special occasions and premium gifting.
+Crafted from sturdy, high-quality materials, these boxes are designed to securely
+hold and protect cookware items during transit and unboxing.`,
+        image: './Images/108.jpg',
+        thumbnails: [
+          './Images/109.jpg',
+          './Images/113.jpg',
+          './Images/111.jpg',
+          './Images/112.jpg',
+        ]
+      },
+      30: {
+        name: '6 Piece Cookware Set Stainless Steel Black PVD',
+        price: 'Price: ₹5950',
+        description:  `<ul>
+          <strong>
+          <li>16 CM SAUCE PAN with LID,</li>
+          <li>16 CM SAUCE POT with LID,</li>
+          <li>S. SPOON, S. TURNER</li></strong>
+        </ul>
+        White gift pack boxes for all our range of cookware offers a sleek and elegant
+presentation, making them perfect for special occasions and premium gifting.
+Crafted from sturdy, high-quality materials, these boxes are designed to securely
+hold and protect cookware items during transit and unboxing.`,
+        image: './Images/129.jpg',
+        thumbnails: [
+          './Images/130.jpg',
+          './Images/131.jpg',
+          './Images/132.jpg',
+          './Images/129.jpg',
+        ]
+      },
+
+      9: {
+        name: 'Stainless Steel Hammered PVD Kadhai',
+        price: 'Price: ₹2450',
+        description: `<strong>Versatile Cooking:</strong> Suitable for a variety of cooking techniques, including
+frying, sautéing and simmering.<br> <strong>Heat Retention:</strong> The lid helps in retaining heat and moisture, which is ideal for
+slow-cooked dishes.
+`,
+        image: './Images/31.jpg',
+        thumbnails: [
+          './Images/27.jpg',
+          './Images/28.jpg',
+          './Images/29.jpg',
+          './Images/30.jpg',
+        ]
+      },
+      10: {
+        name: 'Stainless Steel Hammered PVD Sauce Pan',
+        price: 'Price: ₹1650',
+        description: `<strong>Even Heat Distribution:</strong> Thick encapsulated sandwich (SAS) bottom ensures
+consistent cooking without hotspots.<br> <strong>Lid Included:</strong> Retains heat and moisture for improved flavor and cooking
+efficiency`,
+        image: './Images/33.jpg',
+        thumbnails: [
+          './Images/34.jpg',
+          './Images/35.jpg',
+          './Images/36.jpg',
+          './Images/37.jpg',
+        ]
+      },
+      11: {
+        name: 'Stainless Steel Hammered PVD Fry Pan',
+        price: 'Price: ₹1590',
+        description: `<strong>Compact Size:</strong> Ideal for frying single servings, searing small cuts, or quick
+sautés.<br> <strong>Durable Construction:</strong> Made from high-quality stainless steel for long-lasting
+performance and resistance to rust.
+`,
+        image: './Images/38.jpg',
+        thumbnails: [
+          './Images/39.jpg',
+          './Images/40.jpg',
+          './Images/41.jpg',
+          './Images/42.jpg',
+        ]
+      },
+      12: {
+        name: 'Stainless Steel Hammered PVD Sauce Pot',
+        price: 'Price: ₹2290',
+        description: `<strong>Tight-Fitting Lid:</strong> Locks in moisture and flavors for better cooking results.<br>
+<strong>Even Heat Distribution:</strong> Thick encapsulated sandwich (SAS) bottom ensures
+consistent cooking without hotspots.<br>
+<strong>Ergonomic Handle:</strong> Designed for easy handling and comfort.
+`,
+        image: './Images/44.jpg',
+        thumbnails: [
+          './Images/45.jpg',
+          './Images/46.jpg',
+          './Images/47.jpg',
+          './Images/44.jpg',
+        ]
+      },
+      13: {
+        name: 'Stainless Steel Hammered PVD Spoon and Turner',
+        price: 'Price: ₹590',
+        description: `<strong>Sturdy Construction:</strong> Reinforced for strength, ensuring it can handle heavy or
+bulky items without bending or breaking.<br> <strong>Elegant Finish:</strong> The sleek, polished appearance complements a wide range of
+tableware and kitchen decor.`,
+        image: './Images/48.jpg',
+        thumbnails: [
+          './Images/49.jpg',
+          './Images/50.jpg',
+          './Images/51.jpg',
+          './Images/52.jpg',
+        ]
+      },
+      14: {
+        name: '9 Piece Cookware Set Stainless Steel Hammered PVD',
+        price: 'Price: ₹8450',
+        description:  `<ul>
+          <strong>
+          <li>20 CM FRY PAN without lid,</li>
+          <li>24 CM KADHAI with LID,</li>
+          <li>16 CM SAUCE PAN with LID,</li>
+          <li>20 CM SAUCE POT with LID,</li>
+          <li>S. SPOON, S. TURNER</li></strong>
+        </ul> White gift pack boxes for all our range of cookware offers a sleek and elegant
+presentation, making them perfect for special occasions and premium gifting.
+Crafted from sturdy, high-quality materials, these boxes are designed to securely
+hold and protect cookware items during transit and unboxing.`,
+        image: './Images/117.jpg',
+        thumbnails: [
+          './Images/118.jpg',
+          './Images/119.jpg',
+          './Images/120.jpg',
+          './Images/117.jpg',
+        ]
+      },
+      29: {
+        name: '6 Piece Cookware Set Stainless Steel Hammered PVD',
+        price: 'Price: ₹4950',
+        description:  `<ul>
+          <strong>
+          <li>16 CM SAUCE PAN with LID,</li>
+          <li>16 CM SAUCE POT with LID,</li>
+          <li>S. SPOON, S. TURNER</li></strong>
+        </ul>
+        White gift pack boxes for all our range of cookware offers a sleek and elegant
+presentation, making them perfect for special occasions and premium gifting.
+Crafted from sturdy, high-quality materials, these boxes are designed to securely
+hold and protect cookware items during transit and unboxing.`,
+        image: './Images/121.jpg',
+        thumbnails: [
+          './Images/122.jpg',
+          './Images/123.jpg',
+          './Images/124.jpg',
+          './Images/121.jpg',
+        ]
+      },
+      15: {
+        name: 'Stainless Steel PVD Sauce Pot',
+        price: 'Price: ₹2090',
+        description: `<strong>Ergonomic Handle:</strong> Designed for easy handling and comfort.<br>
+<strong>Easy to Clean:</strong> Smooth stainless steel surface simplifies cleanup.<br> <strong>Modern Design:</strong> Sleek and elegant appearance complements any kitchen
+decor.
+`,
+        image: './Images/6.jpg',
+        thumbnails: [
+          './Images/2.jpg',
+          './Images/3.jpg',
+          './Images/4.jpg',
+          './Images/5.jpg',
+        ]
+      },
+      16: {
+        name: 'Stainless Steel PVD Sauce Pan',
+        price: 'Price: ₹1590',
+        description: `<strong>Lid Included:</strong> Retains heat and moisture for improved flavor and cooking
+efficiency.<br> <strong>Comfortable Handle:</strong> Ergonomically designed for easy handling.
+`,
+        image: './Images/7.jpg',
+        thumbnails: [
+          './Images/9.jpg',
+          './Images/10.jpg',
+          './Images/11.jpg',
+          './Images/12.jpg',
+        ]
+      },
+      17: {
+        name: 'Stainless Steel PVD Fry Pan',
+        price: 'Price: ₹1490',
+        description: `<strong>Non-Reactive Surface:</strong>Suitable for a wide range of ingredients without
+affecting flavor. <br><strong>Easy to Clean:</strong>Smooth surface simplifies cleanup. Comfortable Handle: Heat-resistant and ergonomically designed for ease of
+use`,
+        image: './Images/16.jpg',
+        thumbnails: [
+          './Images/17.jpg',
+          './Images/18.jpg',
+          './Images/19.jpg',
+          './Images/20.jpg',
+        ]
+      },
+      18: {
+        name: 'Stainless Steel PVD Kadhai',
+        price: 'Price: ₹2350',
+        description: `<strong>Safety Features:</strong> Handles are designed to stay cool and provide a secure grip
+during cooking.<br> <strong>Elegant Finish:</strong> Polished stainless steel adds a touch of sophistication to any
+kitchen.
+`,
+        image: './Images/21.jpg',
+        thumbnails: [
+          './Images/22.jpg',
+          './Images/23.jpg',
+          './Images/24.jpg',
+          './Images/25.jpg',
+        ]
+      },
+      19: {
+        name: 'Stainless Steel PVD Spoon and Turner',
+        price: 'Price: ₹550',
+        description: `<strong>Sturdy Construction:</strong> Reinforced for strength, ensuring it can handle heavy or
+bulky items without bending or breaking.<br> <strong>Elegant Finish:</strong> The sleek, polished appearance complements a wide range of
+tableware and kitchen decor.`,
+        image: './Images/13.jpg',
+        thumbnails: [
+          './Images/13.jpg',
+          './Images/14.jpg',
+          './Images/15.jpg',
+          './Images/14.jpg',
+        ]
+      },
+      28: {
+        name: '6 Piece Cookware Set Stainless Steel PVD',
+        price: 'Price: ₹4450',
+        description:  `<ul>
+          <strong>
+          <li>16 CM SAUCE PAN with LID,</li>
+          <li>16 CM SAUCE POT with LID,</li>
+          <li>S. SPOON, S. TURNER</li></strong>
+        </ul>
+        White gift pack boxes for all our range of cookware offers a sleek and elegant
+presentation, making them perfect for special occasions and premium gifting.
+Crafted from sturdy, high-quality materials, these boxes are designed to securely
+hold and protect cookware items during transit and unboxing.`,
+        image: './Images/133.jpg',
+        thumbnails: [
+          './Images/134.jpg',
+          './Images/136.jpg',
+          './Images/135.jpg',
+          './Images/134.jpg',
+        ]
+      },
+      20: {
+        name: '9 Piece Cookware Set Stainless Steel PVD',
+        price: 'Price: ₹7990',
+        description: `<ul>
+          <strong>
+          <li>20 CM FRY PAN without lid,</li>
+          <li>24 CM KADHAI with LID,</li>
+          <li>16 CM SAUCE PAN with LID,</li>
+          <li>20 CM SAUCE POT with LID,</li>
+          <li>S. SPOON, S. TURNER</li></strong>
+        </ul> White gift pack boxes for all our range of cookware offers a sleek and elegant
+presentation, making them perfect for special occasions and premium gifting.
+Crafted from sturdy, high-quality materials, these boxes are designed to securely
+hold and protect cookware items during transit and unboxing.`,
+        image: './Images/104.jpg',
+        thumbnails: [
+          './Images/105.jpg',
+          './Images/106.jpg',
+          './Images/107.jpg',
+          './Images/104.jpg',
+        ]
+      },
+      21: {
+        name: 'Stainless Steel Kadhai',
+        price: `Price: ₹1650`,
+        description: `<strong>Versatile Cooking:</strong> Suitable for a variety of cooking techniques, including
+frying, sautéing and simmering. <br> <strong> Heat Retention:</strong> The lid helps in retaining heat and moisture, which is ideal for
+slow-cooked dishes.`,
+        image: './Images/80.jpg',
+        thumbnails: [
+          './Images/81.jpg',
+          './Images/82.jpg',
+          './Images/83.jpg',
+          './Images/80.jpg',
+        ]
+      },
+      22: {
+        name: 'Stainless Steel Sauce Pan',
+        price: `Price: ₹1050`,
+        description: `<strong> Compact Size: </strong> Ideal for small portions, sauces, soups, and reheating leftovers
+and cooking food. <br> <strong> Durable Construction: </strong> Made from high-quality stainless steel for long-lasting
+use.
+`,
+        image: './Images/84.jpg',
+        thumbnails: [
+          './Images/85.jpg',
+          './Images/86.jpg',
+          './Images/87.jpg',
+          './Images/88.jpg',
+        ]
+      },
+      23: {
+        name: 'Stainless Steel Fry Pan',
+        price: 'Price: ₹990',
+        description: `<strong>Even Heat Distribution:</strong> Thick encapsulated sandwich (SAS) bottom enables even Heat Distribution: Ensures consistent cooking results and prevents
+hotspots. <br> <strong>Non-Reactive Surface:</strong> Suitable for a wide range of ingredients without
+affecting flavor.`,
+        image: './Images/94.jpg',
+        thumbnails: [
+          './Images/95.jpg',
+          './Images/96.jpg',
+          './Images/97.jpg',
+          './Images/98.jpg',
+        ]
+      },
+      24: {
+        name: 'Stainless Steel Sauce Pot',
+        price: 'Price:₹1350',
+        description: `<strong>Tight-Fitting Lid:</strong> Locks in moisture and flavors for better cooking results.<br>
+<strong>Even Heat Distribution:</strong> Thick encapsulated sandwich (SAS) bottom ensures
+consistent cooking without hotspots.`,
+        image: './Images/89.jpg',
+        thumbnails: [
+          './Images/91.jpg',
+          './Images/90.jpg',
+          './Images/93.jpg',
+          './Images/92.jpg',
+        ]
+      },
+      25: {
+        name: 'Stainless Steel Spoon and Turner',
+        price: 'Price:₹290',
+        description: `<strong>Ergonomic Design:</strong> Features a comfortable handle for easy and secure
+handling.<br> <strong>Versatile Use:</strong> Ideal for serving soups, stews, sauces and other dishes.`,
+        image: './Images/99.jpg',
+        thumbnails: [
+          './Images/100.jpg',
+          './Images/101.jpg',
+          './Images/102.jpg',
+          './Images/103.jpg',
+        ]
+      },
+      26: {
+        name: '9 Piece Cookware Set Stainless Steel ',
+        price: 'Price:₹4990',
+        description: `<ul>
+          <strong>
+          <li>20 CM FRY PAN without lid,</li>
+          <li>24 CM KADHAI with LID,</li>
+          <li>16 CM SAUCE PAN with LID,</li>
+          <li>20 CM SAUCE POT with LID,</li>
+          <li>S. SPOON, S. TURNER</li></strong>
+        </ul>
+        White gift pack boxes for all our range of cookware offers a sleek and elegant
+presentation, making them perfect for special occasions and premium gifting.
+Crafted from sturdy, high-quality materials, these boxes are designed to securely
+hold and protect cookware items during transit and unboxing.`,
+        image: './Images/113.jpg',
+        thumbnails: [
+          './Images/113.jpg',
+          './Images/114.jpg',
+          './Images/115.jpg',
+          './Images/116.jpg',
+        ]
+      },
+      27: {
+        name: '6 Piece Cookware Set Stainless Steel ',
+        price: 'Price:₹3450',
+        description: `<ul>
+          <strong>
+          <li>16 CM SAUCE PAN with LID,</li>
+          <li>16 CM SAUCE POT with LID,</li>
+          <li>S. SPOON, S. TURNER</li></strong>
+        </ul>
+        White gift pack boxes for all our range of cookware offers a sleek and elegant
+presentation, making them perfect for special occasions and premium gifting.
+Crafted from sturdy, high-quality materials, these boxes are designed to securely
+hold and protect cookware items during transit and unboxing.`,
+        image: './Images/125.jpg',
+        thumbnails: [
+          './Images/126.jpg',
+          './Images/127.jpg',
+          './Images/128.jpg',
+          './Images/127.jpg',
+        ]
+      }
+      // Add more products here as needed
+    };
+
+    // Function to get product ID from URL
+    function getProductIdFromURL() {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('id');
+    }
+
+    // Display the product details dynamically
+    function displayProductDetails() {
+      const productId = getProductIdFromURL();
+      const product = products[productId];
+
+      if (product) {
+        document.getElementById('productName').textContent = product.name;
+        document.getElementById('productPrice').textContent = product.price;
+        document.getElementById('productDescription').innerHTML = product.description;
+        // Update main image
+        document.getElementById('mainImage').src = product.image;
+
+        // Update thumbnails
+        document.getElementById('thumb1').src = product.thumbnails[0];
+        document.getElementById('thumb2').src = product.thumbnails[1];
+        document.getElementById('thumb3').src = product.thumbnails[2];
+        document.getElementById('thumb4').src = product.thumbnails[3];
+        // Add click event listeners to thumbnails to change main image
+        document.getElementById('thumb1').addEventListener('click', function () {
+          document.getElementById('mainImage').src = product.thumbnails[0];
+        });
+        document.getElementById('thumb2').addEventListener('click', function () {
+          document.getElementById('mainImage').src = product.thumbnails[1];
+        });
+        document.getElementById('thumb3').addEventListener('click', function () {
+          document.getElementById('mainImage').src = product.thumbnails[2];
+        });
+        document.getElementById('thumb4').addEventListener('click', function () {
+          document.getElementById('mainImage').src = product.thumbnails[3];
+        });
+      }
+    }
+
+    // Call the function to display product details when the page loads
+    window.onload = displayProductDetails;
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggleButton = document.querySelector('.navbar-toggler');
+      const navbarCollapse = document.getElementById('navbarCollapse');
+
+      toggleButton.addEventListener('click', function () {
+        navbarCollapse.classList.toggle('show');
+      });
+    });
+  </script>
+
+</body>
+
+</html>
