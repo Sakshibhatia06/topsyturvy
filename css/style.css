@@ -10227,10 +10227,7 @@ h1, h2 {
   .stars {
     font-size: 10px;
   }
-  .DealDay{
-    display: flex;
-    flex-direction: column;
-  }
+  
   .owl-nav{
     display: none;
   }
@@ -10301,5 +10298,12 @@ h1, h2 {
     display: flex;
     gap: 150px;
   }
+  .DealDay{
+    display: flex;
+    flex-direction: column;
+  }
 }
-  
+@media (min-width: 1676px) {
+.review-section {
+  max-width: 700px;}
+}
