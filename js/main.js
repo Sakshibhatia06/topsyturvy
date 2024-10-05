@@ -119,4 +119,12 @@ window.addEventListener('scroll', function() {
         content.classList.remove('active');
     }
 });
-ScrollReveal().reveal('.container-fluid', { delay: 400 },{origin:"left"});
+let barware=document.getElementById("Barware")
+barware.addEventListener("click",()=>{
+  alert("COMING SOON");
+})
+let barware1=document.getElementById("Barware1")
+barware1.addEventListener("click",()=>{
+  alert("COMING SOON");
+})
+ScrollReveal().reveal('.container-fluid', { delay: 500 },{origin:"left"});
