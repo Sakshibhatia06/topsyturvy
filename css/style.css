@@ -9801,6 +9801,10 @@ a.text-dark:hover, a.text-dark:focus {
 .item img:hover{
   transform: scale(0.8);
 }
+.cat-img1:hover{
+  transition: 0.4s;
+  transform: scale(0.9);
+}
 .item button {
   margin-top: 15px;
   padding: 9px 10px;
