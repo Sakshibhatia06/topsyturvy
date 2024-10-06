@@ -10302,9 +10302,12 @@ h1, h2 {
     display: flex;
     flex-direction: column;
   }
-  h5{
+  .product-item1 h5{
     font-size: 0.75rem;
     font-weight: 600;
+  }
+  .container-fluid{
+    width:110%;
   }
   .position{
     display: flex;
