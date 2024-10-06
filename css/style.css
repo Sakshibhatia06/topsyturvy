@@ -9920,7 +9920,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* Product Section */
 .product-grid {
- display: flex;
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
  flex-wrap: wrap;
  justify-content: center;
   gap: 20px;
@@ -9933,8 +9934,6 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 1 1 30%;
-  max-width: 30%;
 }
 
 .product-item1 img {
@@ -9968,20 +9967,15 @@ a.text-dark:hover, a.text-dark:focus {
 
 .product-item1 button {
   margin-top: 15px;
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: #005a9c;
   color: white;
   border: none;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 0.75rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-.product-item1 button:hover {
-  background-color: #004080;
-}
-
 /* Why Gift Section */
 .why-gift-section {
   padding: 50px;
@@ -10182,6 +10176,8 @@ h1, h2 {
 .row2{
   display: flex;
   gap: 50px;
+  /* align-items: center; */
+  /* justify-content: center; */
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -10191,9 +10187,10 @@ h1, h2 {
   }
   .row2{
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 5px;
     gap: 10px;
   }
+  
   h1 {
       font-size: 28px;
   }
@@ -10207,6 +10204,10 @@ h1, h2 {
       text-align: center;
       font-weight: 700;
   }
+}
+@media (min-width: 1676px) {
+.review-section {
+  max-width: 700px;}
 }
 @media (max-width: 576px) {
   .product-grid {
@@ -10227,7 +10228,6 @@ h1, h2 {
   .stars {
     font-size: 10px;
   }
-  
   .owl-nav{
     display: none;
   }
@@ -10294,16 +10294,18 @@ h1, h2 {
     margin-left: 30px;
     margin-right: 30px;
   }
-  .position{
-    display: flex;
-    gap: 150px;
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   }
   .DealDay{
     display: flex;
     flex-direction: column;
   }
+  .position{
+    display: flex;
+    gap: 150px;
+  }
 }
-@media (min-width: 1676px) {
-.review-section {
-  max-width: 700px;}
-}
+  
+
