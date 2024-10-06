@@ -10247,7 +10247,7 @@ h1, h2 {
     padding: 10px;
   }
   .product-item1 img {
-    max-width: 50%;
+    max-width: 100%;
   }
   .mediaRow{
     display: grid;
@@ -10301,6 +10301,10 @@ h1, h2 {
   .DealDay{
     display: flex;
     flex-direction: column;
+  }
+  h5{
+    font-size: 0.75rem;
+    font-weight: 600;
   }
   .position{
     display: flex;
